@@ -1,0 +1,15 @@
+Spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/meetingplanner
+    username: postgres
+    password: momo
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
